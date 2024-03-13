@@ -1,0 +1,18 @@
+public class ThrowExample{
+  int divion(int a,int b) throws ArithmeticException{
+    int intel=a/b;
+    return intel;
+  }
+
+    public static void main(String[] args) {
+        ThrowExample obj=new ThrowExample();
+        try{
+           System.out.println(obj.divion(15,0));
+        }
+        catch(ArithmeticException e){
+         System.out.println("can not divide by zero ");
+
+  }
+      
+    }
+}
